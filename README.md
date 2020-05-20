@@ -1,4 +1,4 @@
-# uniborg
+# 🇮🇳Indian Bot Ultra 🇮🇳
 
 Pluggable [``asyncio``](https://docs.python.org/3/library/asyncio.html)
 [Telegram](https://telegram.org) userbot based on
@@ -12,20 +12,20 @@ Pluggable [``asyncio``](https://docs.python.org/3/library/asyncio.html)
 
 #### Other way 
 
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/muhammedfurkan/UniBorg)
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/indianboteam/Indianbotultra)
 
 ### Performance Test
 
-[![DeepSource](https://static.deepsource.io/deepsource-badge-light-mini.svg)](https://deepsource.io/gh/muhammedfurkan/UniBorg/?ref=repository-badge)
+[![DeepSource](https://static.deepsource.io/deepsource-badge-light-mini.svg)](https://deepsource.io/gh/indianboteam/indianbotultra/?ref=repository-badge)
 
 ### Code Quality
 
-[![CodeFactor](https://www.codefactor.io/repository/github/muhammedfurkan/uniborg/badge)](https://www.codefactor.io/repository/github/muhammedfurkan/uniborg)
+[![CodeFactor](https://www.codefactor.io/repository/github/muhammedfurkan/uniborg/badge)](https://www.codefactor.io/repository/github/indianboteam/indianbotultra)
 
 #### The Legacy Way
 Simply clone the repository and run the main file:
 ```sh
-git clone https://github.com/muhammedfurkan/uniborg.git
+git clone https://github.com/indianboteam/indianbotultra.git
 cd uniborg
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
@@ -38,7 +38,7 @@ An example `config.py` file could be:
 
 **Not All of the variables are mandatory**
 
-__The UniBorg should work by setting only these variables__
+__The indian bot ultra should work by setting only these variables__
 
 ```python3
 from sample_config import Config
@@ -76,33 +76,15 @@ The core features offered by the custom `TelegramClient` live under the
 directory, with some utilities, enhancements, the `_core` plugin, and the `_inline_bot` plugin.
 
 
-## [@By_Azade](https://telegram.dog/By_Azade)
+## [@MarioDevs](https://telegram.dog/Mariodevs)
 
 - Only two of the environment variables are mandatory.
 - This is because of `telethon.errors.rpc_error_list.ApiIdPublishedFloodError`
     - `APP_ID`:   You can get this value from https://my.telegram.org
     - `API_HASH`:   You can get this value from https://my.telegram.org
 - The userbot will work without setting the non-mandatory environment variables.
-- Please report any issues to the support group: [support group](https://t.me/joinchat/AHAujEjG4FBO-TH-NrVVbg)
 
 
-## design
-
-The modular design of the project enhances your Telegram experience
-through [plugins](https://github.com/SpEcHiDe/uniborg/tree/master/stdplugins)
-which you can enable or disable on demand.
-
-Each plugin gets the `borg`, `logger`, `Config`, `tgbot` magical
-[variables](https://github.com/muhammedfurkan/UniBorg/blob/488eff632e65103ba7017d4f52777d22ddd52ea2/uniborg/uniborg.py#L76-L80)
-to ease their use. Thus creating a plugin as easy as adding
-a new file under the plugin directory to do the job:
-
-```python
-# stdplugins/myplugin.py
-from telethon import events
-from uniborg.util import admin_cmd
-
-@borg.on(admin_cmd(pattern="hi"))
 async def handler(event):
     await event.reply("hey")
 ```
